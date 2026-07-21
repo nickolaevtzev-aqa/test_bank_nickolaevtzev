@@ -50,7 +50,7 @@ def transfer_request_fixture(api_manager):
 	user_auth = api_manager.admin_steps.create_user(user_request)
 	user_auth.password = user_request.password
 
-	# Создаем ему два аккаунта
+	# Создаем ему два счёта
 	first_acc = api_manager.user_steps.create_account(user_auth)
 	second_acc = api_manager.user_steps.create_account(user_auth)
 
